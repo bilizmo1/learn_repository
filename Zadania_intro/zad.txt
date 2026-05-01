@@ -1,0 +1,19 @@
+Utwórz klasę BankAccount w 3 plikach: BankAccount.h, BankAccount.cpp, 
+ klasa ma mieć prywatne pola string owner, string accountNumber, double balance; 
+ konstruktor BankAccount(string o, string n, double b) ma ustawiać dane konta; destruktor ~BankAccount() ma wypisywać 
+ Usunieto obiekt BankAccount; 
+ 
+ metoda showData() ma wypisywać właściciela, numer konta i saldo; 
+
+metoda deposit(double amount) ma zwiększać saldo i wypisywać wpłaconą kwotę; 
+
+metoda withdraw(double amount) 
+ma wypłacać pieniądze tylko wtedy, gdy saldo wystarcza, a w przeciwnym razie wypisywać 
+Brak wystarczajacych srodkow;
+
+ metoda hasEnoughMoney(double amount) ma zwracać true, 
+jeśli saldo jest większe lub równe podanej kwocie, inaczej false; 
+
+w main.cpp utwórz konto 
+BankAccount acc1("Jan Kowalski", "123456789", 1000);, wywołaj showData(), deposit(500), withdraw(300), withdraw(2000) 
+i po każdej operacji pokaż aktualne dane konta.
